@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>2-2【地質探秘：岩石、礦物與環境】互動式動畫</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="container">
+        <div id="sidebar">
+        </div>
+    
+        <div id="modelViewer">
+            <div id="loading-screen">
+                <h2>Loading Model...</h2>
+                <div id="progress-bar">
+                    <div id="progress-bar-fill"></div>
+                </div>
+            </div>
+    
+            <div id="model-title">
+                岩石名稱
+            </div>
+    
+            <div id="info-panel">
+                <div id="info-panel-header">
+                    詳細資訊
+                    <div id="info-panel-toggle">
+                        ⬆ 點擊展開
+                    </div>
+                </div>
+    
+                <div id="info-panel-content">
+                    <div id="info-image-container">
+                        <img id="info-image" />
+                    </div>
+    
+                    <div id="info-content">
+                        <div id="info-description"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
+    <script src="lib/data.js"></script>
+    <script src="lib/main.js"></script>
+</body>
+</html>
